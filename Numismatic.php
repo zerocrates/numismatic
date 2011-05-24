@@ -133,6 +133,18 @@ class Numismatic
         return $arrays;
     }
 
+    /**
+     * Return the referent metadata for each COinS span in the input.
+     *
+     * In each array, the key:
+     *
+     * 'id' is the referent ID,
+     * 'format' is the metadata format identifier,
+     * 'metadata' is an associative array of the metadata, without the
+     *   'rft.' prefix for each key
+     *
+     * @return array
+     */
     public function getMetadata()
     {
         $metadataArrays = array();
